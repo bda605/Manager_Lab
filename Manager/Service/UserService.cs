@@ -14,13 +14,16 @@ namespace Manager.Service
             var userRepository = new UserRepository();
             var roleRepository = new RoleRepository();
             var member = userRepository.GetUser(id, pwd);
-            var roleName = roleRepository.GetRoleName(member.RoleId);
-            if (member != null && !string.IsNullOrEmpty(roleName))
+            if (member != null )
             {
-                userResponseViewModel.IsSuccess = true;
-                userResponseViewModel.Name = member.Name;
-                userResponseViewModel.RoleName = roleName;
-                return userResponseViewModel;
+                var roleName = roleRepository.GetRoleName(member.RoleId);
+                if (!string.IsNullOrEmpty(roleName)) 
+                {
+                    userResponseViewModel.IsSuccess = true;
+                    userResponseViewModel.Name = member.Name;
+                    userResponseViewModel.RoleName = roleName;
+                    return userResponseViewModel;
+                }
             }
             return userResponseViewModel;
         }
