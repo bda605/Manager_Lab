@@ -15,7 +15,7 @@ namespace Manager.Repository
              new User{Id="EDDIE",Pwd="EDDIE",Name = "老二",RoleId =2 },
         };
 
-        public UserViewModel GetUser(string id, string pwd)
+        public virtual UserViewModel GetUser(string id, string pwd)
         {
             //連DB
             var dbFindSingle = users.Where(m => m.Id == id && m.Pwd == pwd).FirstOrDefault();

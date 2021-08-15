@@ -95,3 +95,9 @@ C:\Users\USER\source\repos\Manager\ManagerTest\obj\Debug\netcoreapp3.1\ManagerTe
 C:\Users\USER\source\repos\Manager\ManagerTest\obj\Debug\netcoreapp3.1\ManagerTest.csproj.CopyComplete
 C:\Users\USER\source\repos\Manager\ManagerTest\obj\Debug\netcoreapp3.1\ManagerTest.dll
 C:\Users\USER\source\repos\Manager\ManagerTest\obj\Debug\netcoreapp3.1\ManagerTest.pdb
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\FluentAssertions.dll
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\USER\source\repos\Manager\ManagerTest\bin\Debug\netcoreapp3.1\NSubstitute.dll

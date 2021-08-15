@@ -12,7 +12,7 @@ namespace Manager.Repository
          { 1, "ADMIN" },
          { 2, "OP" },
         };
-        public string GetRoleName(int id)
+        public virtual string GetRoleName(int id)
         {
             //連DB
             var dbFindSingle = roles.Where(m => m.Key == id).FirstOrDefault();
