@@ -13,7 +13,7 @@ namespace Manager.Service
             var userResponseViewModel = new UserResponseViewModel();
             var userRepository = new UserRepository();
             var roleRepository = new RoleRepository();
-            var member = userRepository.GetUser("ADMIN", "ADMIN");
+            var member = userRepository.GetUser(id, pwd);
             var roleName = roleRepository.GetRoleName(member.RoleId);
             if (member != null && !string.IsNullOrEmpty(roleName))
             {
