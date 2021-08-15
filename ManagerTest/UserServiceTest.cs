@@ -15,7 +15,7 @@ namespace ManagerTest
         [Test]
         public void LoginSuccess()
         {
-            UserResponseViewModel expected = SetExpected(true, "ADMIN", "ADMIN");
+            UserResponseViewModel expected = SetExpected(true, "老大", "ADMIN");
             var userService = new FakeUserService();
             var result = userService.Login("ADMIN", "ADMIN");
             expected.Should().BeEquivalentTo(result);
@@ -57,7 +57,7 @@ namespace ManagerTest
         {
             if (id == "ADMIN" && pwd == "ADMIN") 
             {
-                return new UserViewModel { Name = "¦Ñ¤j", RoleId = 1 };
+                return new UserViewModel { Name = "老大", RoleId = 1 };
             }
             return null;
         }
