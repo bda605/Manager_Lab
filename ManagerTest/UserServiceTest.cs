@@ -15,7 +15,7 @@ namespace ManagerTest
         [Test]
         public void LoginSuccess()
         {
-            UserResponseViewModel expected = SetExpected(true, "老大", "ADMIN");
+            var expected = SetExpected(true, "老大", "ADMIN");
             var userService = new FakeUserService();
             var result = userService.Login("ADMIN", "ADMIN");
             expected.Should().BeEquivalentTo(result);
