@@ -22,13 +22,13 @@ namespace ManagerTest
         [Test]
         public void LoginSuccess()
         {
-            var expected = SetExpected(true, "�Ѥj", "ADMIN");
+            var expected = SetExpected(true, "老大", "ADMIN");
             string id = "ADMIN";
             string pwd = "ADMIN";
             int roleId = 1;
             _userRepository.GetUser(id, pwd).Returns(new UserViewModel
             {
-                Name = "�Ѥj",
+                Name = "老大",
                 RoleId = roleId
             });
             _roleRepository.GetRoleName(roleId).Returns("ADMIN");
