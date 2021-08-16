@@ -16,14 +16,14 @@ namespace Manager.Service
         public UserResponseViewModel Login(string id, string pwd)
         {
             var userResponseViewModel = new UserResponseViewModel();
-            var member = _userRepository.GetUser(id, pwd);
-            if (member != null )
+            var user = _userRepository.GetUser(id, pwd);
+            if (user != null )
             {
-                var roleName = _roleRepository.GetRoleName(member.RoleId);
+                var roleName = _roleRepository.GetRoleName(user.RoleId);
                 if (!string.IsNullOrEmpty(roleName)) 
                 {
                     userResponseViewModel.IsSuccess = true;
-                    userResponseViewModel.Name = member.Name;
+                    userResponseViewModel.Name = user.Name;
                     userResponseViewModel.RoleName = roleName;
                     return userResponseViewModel;
                 }
